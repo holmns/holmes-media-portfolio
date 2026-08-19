@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio
 
-## Getting Started
+Minimal dark portfolio for a photographer / videographer / editor.
+Next.js (App Router) + TypeScript + Tailwind CSS v4.
 
-First, run the development server:
+## Develop
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run dev     # http://localhost:3000
+npm run build   # production build
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Editing content
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Everything on the page comes from `src/data/site.ts`:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `site` - name, role, location, email, bio paragraphs, services, social links
+- `photography` - the stills grid
+- `videography` - the film/edit list
 
-## Learn More
+No other file needs to change to put your own work up.
 
-To learn more about Next.js, take a look at the following resources:
+## Adding images
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Drop files into `public/` and point at them with a root-relative path:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+public/work/salt-flats.jpg  ->  src: "/work/salt-flats.jpg"
+```
 
-## Deploy on Vercel
+```ts
+{ title: "Salt Flats", meta: "Editorial - 2025", shape: "landscape", src: "/work/salt-flats.jpg" }
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Any item without a `src` renders as a labelled placeholder frame, so the
+layout is complete before the real work lands.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Photos take `shape: "portrait" | "landscape" | "square"` (defaults to portrait).
+  The stills grid is CSS masonry, so mixed crops pack without gaps.
+- Films are always 16:9. Add `href` to link a film out to Vimeo/YouTube.
+
+## Design notes
+
+- Dark only - the palette lives in `:root` in `src/app/globals.css`.
+- Animation is deliberately minimal: colour/opacity hovers and smooth anchor
+  scrolling, both disabled under `prefers-reduced-motion`.
