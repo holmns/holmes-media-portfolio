@@ -1,6 +1,6 @@
 import { site } from "@/data/site";
+import { Programs } from "./Programs";
 import { Section } from "./Section";
-import { Skills } from "./Skills";
 
 export function About() {
   return (
@@ -20,12 +20,12 @@ export function About() {
         <dl className="space-y-8 text-sm">
           <div>
             <dt className="mb-3 font-mono text-[11px] uppercase tracking-[0.2em] text-muted">
-              Services
+              Skills
             </dt>
             <dd>
               <ul className="space-y-1.5 text-foreground/90">
-                {site.services.map((service) => (
-                  <li key={service}>{service}</li>
+                {site.skills.map((skill) => (
+                  <li key={skill}>{skill}</li>
                 ))}
               </ul>
             </dd>
@@ -33,10 +33,10 @@ export function About() {
 
           <div>
             <dt className="mb-3 font-mono text-[11px] uppercase tracking-[0.2em] text-muted">
-              Skills
+              Programs
             </dt>
             <dd>
-              <Skills />
+              <Programs />
             </dd>
           </div>
 

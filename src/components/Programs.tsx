@@ -21,7 +21,7 @@ const tools = [
   { name: "Adobe Lightroom Classic", monogram: "Lr" },
 ];
 
-export function Skills() {
+export function Programs() {
   return (
     <ul className="flex flex-wrap gap-2">
       {tools.map((tool) => (

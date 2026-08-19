@@ -17,7 +17,7 @@ export const site = {
     "Fortunately, my father had an old camera lying around, and once I got my hands on it, that curiosity found somewhere to go. I started with stills, bringing my camera to every place I went and capturing everything I saw.",
     "Fast-forward to today, that same fascination runs in two directions at once: photography, where I'm still chasing that one frame, and cinematography and VFX, where I get to build the kind of images that pulled me in as a kid in the first place. Different tools, same reason I started.",
   ],
-  services: ["Landscape stills & portraits", "Live events & stage", "Video, VFX & color grading"],
+  skills: ["Landscape stills & portraits", "Live events & stage", "Video, VFX & color grading"],
   socials: [
     { label: "Instagram", href: "https://www.instagram.com/holmns_/" },
     { label: "TikTok", href: "https://www.tiktok.com/@holmns_" },
