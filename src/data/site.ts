@@ -67,7 +67,7 @@ export type Film = {
 export const videography: Film[] = [
   {
     title: "High School Graduation Day Video Intro",
-    note: "The opening title sequence, played to the hall before the graduating class walked on.",
+    note: "The opening title sequence, played to the graduating class.",
     role: "Directed, shot, edited, VFX",
     year: "2025",
     feature: { label: "Intro", runtime: "0:10", youtube: "ZSdLsdhD2U8" },
@@ -77,7 +77,7 @@ export const videography: Film[] = [
     title: "35 Facts About MWIT",
     note: "A tour of my high school in thirty-five facts, shot around the campus.",
     role: "Directed, shot, edited, VFX",
-    year: "2025",
+    year: "2024",
     feature: { label: "Full video", runtime: "8:32", youtube: "ygp6PZOXh2A" },
     breakdown: { label: "VFX breakdown", runtime: "0:25", youtube: "ux44o5C7K2s" },
   },
