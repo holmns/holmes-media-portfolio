@@ -13,9 +13,9 @@ export const site = {
   location: "Bangkok, TH",
   email: "nawathome@gmail.com",
   bio: [
-    "I am a photographer based in Bangkok. Most of what is here was made away from a schedule: harbour nights in Hong Kong, first light on Fuji, the coast road in southern Italy, glacier water in the Rockies, and a truck parked under the stars a few hours out of the city.",
-    "Low light is the thread through all of it. Long exposures, blue hour, available light pushed as far as the sensor will take it, usually one body and a 24-70 f/2.8. I would rather wait out a frame than go looking for an easier one.",
-    "The other side of the work is live: stages, field shows and night fire drills, shot in whatever color the lighting rig decides to throw. It taught me to work fast and commit, which is a useful counterweight to all the waiting.",
+    "When I was a kid, I'd sit through anything just to watch how a movie shot was built - the light, the cinematography, the effects that made the impossible look real. It always excited me.",
+    "Fortunately, my father had an old camera lying around, and once I got my hands on it, that curiosity found somewhere to go. I started with stills, bringing my camera to every place I went and capturing everything I saw.",
+    "Fast-forward to today, that same fascination runs in two directions at once: photography, where I'm still chasing that one frame, and cinematography and VFX, where I get to build the kind of images that pulled me in as a kid in the first place. Different tools, same reason I started.",
   ],
   services: ["Landscape stills & portraits", "Live events & stage", "Video, VFX & color grading"],
   socials: [
